@@ -1,0 +1,89 @@
+#root {
+  width: 100%;
+  font-size: 14px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+
+#addHouse-form {
+  width: 60%;
+  justify-items: center;
+}
+
+form h2 {
+  border-bottom: 1px solid #fff;
+}
+
+form h2,
+.add-house-page h2 {
+  color: #fff;
+}
+
+.horizontal-buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: 5px 10px;
+  color: white;
+}
+
+input:focus {
+  background-color: rgba(31, 30, 30, 0.402);
+  color: white;
+}
+
+select,
+button,
+.button {
+  outline: none;
+  border: 0.1rem solid #fff;
+  border-radius: 3rem;
+  width: 100px;
+  padding: 3px;
+  color: #fff;
+  text-align: center;
+  background-color: transparent;
+}
+
+option {
+  color: #000;
+}
+
+button {
+  cursor: pointer;
+}
+
+form ::placeholder {
+  color: rgba(255, 255, 255, 0.705);
+  background-color: transparent;
+  outline: none;
+  font-weight: 500;
+}
+
+/* Hovers */
+button[type="submit"]:hover,
+button[type="submit"]:focus,
+a:hover {
+  background-color: #fff;
+  color: #21893e;
+  font-weight: 600;
+}
