@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-const baseUrl = 'http://localhost:3000/api/v1/houses/:house_id/reservations';
+const baseUrl = 'https://houses-reservation-backend.onrender.com/api/v1/houses/:house_id/reservations';
 
 const initialState = {
   reserved: [],
