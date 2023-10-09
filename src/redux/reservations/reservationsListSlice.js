@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-const baseUrl = 'https://houses-reservation-backend.onrender.com/api/v1/houses/:house_id/reservations';
+const baseUrl = (house_id) => `https://houses-reservation-backend.onrender.com/api/v1/houses/${house_id}/reservations`;
 
 const initialState = {
   reserved: [],
@@ -10,8 +10,8 @@ const initialState = {
 
 export const fetchReservations = createAsyncThunk(
   'reservations/fetchReservations',
-  async () => {
-    const response = await fetch(baseUrl);
+  async (house_id) => {
+    const response = await fetch(baseUrl(house_id));
     const data = await response.json();
     return data;
   },

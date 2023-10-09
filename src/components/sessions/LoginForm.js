@@ -20,16 +20,16 @@ const LoginForm = () => {
     }));
   };
 
-  const url = 'http://127.0.0.1:3000/api/v1/users/sign_in';
+  const url = 'https://houses-reservation-backend.onrender.com/api/v1/users/sign_in';
 
-  const handleSuccessfulLogin = () => {
-    setLoginSuccess(true);
+  // const handleSuccessfulLogin = () => {
+  //   setLoginSuccess(true);
 
-    // Refresh the page after a successful login
-    setTimeout(() => {
-      window.location.reload();
-    }, 1);
-  };
+  //   // Refresh the page after a successful login
+  //   setTimeout(() => {
+  //     window.location.reload();
+  //   }, 1);
+  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -46,7 +46,7 @@ const LoginForm = () => {
       if (response.ok) {
         const data = await response.json();
         localStorage.setItem('userData', JSON.stringify(data));
-        handleSuccessfulLogin();
+        setLoginSuccess(true);
         navigate('/homepage');
       } else {
         setLoginFailure(true);
