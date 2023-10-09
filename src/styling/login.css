@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Fjalla+One&family=Pacifico&family=Pinyon+Script&family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Figtree&family=Fjalla+One&family=Pacifico&family=Pinyon+Script&family=Roboto:ital@1&family=Zeyada&display=swap');
+
 .login,
 .splash,
 .registration {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-template-rows: auto;
   justify-content: center;
   align-items: center;
@@ -12,4 +16,32 @@
   color: #fff;
   width: 100%;
   text-align: center;
+}
+
+.splash h1 {
+  font-size: 58px;
+  font-family: "Dancing Script", serif;
+  animation: textload 1s ease-in-out;
+}
+
+.splash p {
+  margin-bottom: 20vh;
+  padding: 5px;
+  animation: textload 1.2s ease-in-out;
+}
+
+.splash div {
+  animation: textload 1.4s ease-in-out;
+}
+
+@keyframes textload {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
