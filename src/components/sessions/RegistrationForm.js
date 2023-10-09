@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
@@ -12,7 +12,7 @@ const RegistrationForm = () => {
   const [registrationSuccess, setRegistrationSuccess] = useState(false);
   const [registrationFailure, setRegistrationFailure] = useState(false);
   const [errorData, setErrorData] = useState(null);
-  const navigate = useNavigate();
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -21,7 +21,6 @@ const RegistrationForm = () => {
     }));
   };
 
-  // Dltam masala da
   const url = 'https://houses-reservation-backend.onrender.com/api/v1/users';
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -37,7 +36,6 @@ const RegistrationForm = () => {
 
       if (response.ok) {
         setRegistrationSuccess(true);
-        navigate('/login');
       } else {
         const data = await response.json();
         setErrorData(data.errors);
