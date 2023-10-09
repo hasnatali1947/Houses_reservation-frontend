@@ -41,13 +41,13 @@ const App = () => {
 
           <div className="content">
             <Routes>
-              <Route path="/" element={<SplashPage />} />
-              <Route path="/login" element={<LoginForm />} />
-              <Route path="/register" element={<RegistrationForm />} />
-              <Route path="/homepage" element={<HomePage />} />
-              <Route path="/add-house" element={<HouseForm />} />
-              <Route path="/House/:id" element={<HouseDetails />} />
-              <Route path="/delete-house" element={<DeleteHouse />} />
+              <Route exact path="/" element={<SplashPage />} />
+              <Route exact path="/login" element={<LoginForm />} />
+              <Route exact path="/register" element={<RegistrationForm />} />
+              <Route exact path="/homepage" element={<HomePage />} />
+              <Route exact path="/add-house" element={<HouseForm />} />
+              <Route exact path="/House/:id" element={<HouseDetails />} />
+              <Route exact path="/delete-house" element={<DeleteHouse />} />
               <Route
                 exact
                 path="/reservations"
