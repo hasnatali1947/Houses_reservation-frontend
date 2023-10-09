@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const baseUrl = 'http://localhost:3000/api/v1/houses';
+const baseUrl = 'https://houses-reservation-backend.onrender.com/api/v1/houses';
 
 const initialState = {
   reservationHouses: [],
