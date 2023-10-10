@@ -57,7 +57,7 @@
 
 ***[Link to FrontEnd Repo](https://github.com/mercymugambi/frontend_house_reservations_react_app)***
 
-***[Link to BackEnd Repo](https://github.com/mercymugambi/backend_house_reservations_rails_app)***
+***[Link to BackEnd Repo](https://github.com/hasnatali1947/houses_reservation_backend)***
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
