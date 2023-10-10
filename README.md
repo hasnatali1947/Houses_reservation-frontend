@@ -55,7 +55,7 @@
 
 ***[Link to Live Demo](https://houses-reservation-frontend-git-dev-hasnatking1947-gmailcom.vercel.app/homepage)***
 
-***[Link to FrontEnd Repo](https://github.com/mercymugambi/frontend_house_reservations_react_app)***
+***[Link to FrontEnd Repo](https://github.com/hasnatali1947/Houses_reservation-frontend)***
 
 ***[Link to BackEnd Repo](https://github.com/hasnatali1947/houses_reservation_backend)***
 
