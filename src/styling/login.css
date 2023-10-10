@@ -18,30 +18,30 @@
   text-align: center;
 }
 
-.splash h1{
+.splash h1 {
   font-size: 58px;
   font-family: "Dancing Script", serif;
   animation: textload 1s ease-in-out;
 }
 
-.splash p{
+.splash p {
   margin-bottom: 20vh;
   padding: 5px;
   animation: textload 1.2s ease-in-out;
 }
 
-.splash div{
+.splash div {
   animation: textload 1.4s ease-in-out;
 }
 
 @keyframes textload {
-
   0% {
     transform: translateY(30px);
-  opacity: 0;
-}
-100% {
-  transform: translateY(0);
-  opacity: 1;
-}
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
