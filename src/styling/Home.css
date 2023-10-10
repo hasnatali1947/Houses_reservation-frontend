@@ -65,11 +65,12 @@
 }
 
 .house-item {
-  display: grid;
+  display: flex;
   flex-direction: column;
   gap: 20px;
   flex: 0 0 auto;
   align-items: center;
+  justify-content: center;
   text-align: center;
   margin-right: 16px;
   transition: transform 0.5s ease;
