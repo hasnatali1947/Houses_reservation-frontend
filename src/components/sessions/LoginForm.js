@@ -24,11 +24,10 @@ const LoginForm = () => {
 
   const handleSuccessfulLogin = () => {
     setLoginSuccess(true);
-
     // Refresh the page after a successful login
-    // setTimeout(() => {
-    //   window.location.reload();
-    // }, 1);
+    setTimeout(() => {
+      window.location.reload();
+    }, 1);
   };
 
   const handleSubmit = async (e) => {
